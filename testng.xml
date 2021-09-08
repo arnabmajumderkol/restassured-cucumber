@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BDD API Automation" verbose="1" parallel="tests"
+	thread-count="1" configfailurepolicy="continue">
+	<test name="Search and Validate Details using API" annotations="JDK"
+		preserve-order="true">
+		<classes>
+			<class name="api_automation.runner.TestRunner" />
+		</classes>
+	</test>
+</suite>
+
+

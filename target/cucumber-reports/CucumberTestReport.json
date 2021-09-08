@@ -1,0 +1,255 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Search and fetch the emails in comments for an user using API and validate the same",
+        "description": "",
+        "id": "api-automation-using-restassured;search-and-fetch-the-emails-in-comments-for-an-user-using-api-and-validate-the-same;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4507608800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I hit api to fetch users",
+            "match": {
+              "location": "APIAutomationStepDefinition.i_hit_api_to_fetch_users()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2328800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I search for \"Delphine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Delphine",
+                  "offset": 14
+                }
+              ],
+              "location": "APIAutomationStepDefinition.i_search_for(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 232220000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search post for the mentioned user",
+            "match": {
+              "location": "APIAutomationStepDefinition.i_search_post_for_the_mentioned_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 744760700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search and fetch the comments for post and validate the emails",
+            "match": {
+              "location": "APIAutomationStepDefinition.i_search_and_fetch_the_comments_for_post_and_validate_the_email()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Sanity"
+          },
+          {
+            "line": 3,
+            "name": "@Test_Scenario_1"
+          },
+          {
+            "line": 3,
+            "name": "@Smoke_Test"
+          }
+        ]
+      },
+      {
+        "line": 12,
+        "name": "Search and fetch the emails in comments for an user using API and validate the same",
+        "description": "",
+        "id": "api-automation-using-restassured;search-and-fetch-the-emails-in-comments-for-an-user-using-api-and-validate-the-same;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 77504400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I hit api to fetch users",
+            "match": {
+              "location": "APIAutomationStepDefinition.i_hit_api_to_fetch_users()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I search for \"Samantha\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Samantha",
+                  "offset": 14
+                }
+              ],
+              "location": "APIAutomationStepDefinition.i_search_for(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51839800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search post for the mentioned user",
+            "match": {
+              "location": "APIAutomationStepDefinition.i_search_post_for_the_mentioned_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 694632400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search and fetch the comments for post and validate the emails",
+            "match": {
+              "location": "APIAutomationStepDefinition.i_search_and_fetch_the_comments_for_post_and_validate_the_email()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Sanity"
+          },
+          {
+            "line": 3,
+            "name": "@Test_Scenario_1"
+          },
+          {
+            "line": 3,
+            "name": "@Smoke_Test"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Search and fetch the emails in comments for an user using API and validate the same",
+        "description": "",
+        "id": "api-automation-using-restassured;search-and-fetch-the-emails-in-comments-for-an-user-using-api-and-validate-the-same;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 65389200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I hit api to fetch users",
+            "match": {
+              "location": "APIAutomationStepDefinition.i_hit_api_to_fetch_users()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I search for \"Maxime_Nienow\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Maxime_Nienow",
+                  "offset": 14
+                }
+              ],
+              "location": "APIAutomationStepDefinition.i_search_for(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 79583400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I search post for the mentioned user",
+            "match": {
+              "location": "APIAutomationStepDefinition.i_search_post_for_the_mentioned_user()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 700342100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search and fetch the comments for post and validate the emails",
+            "match": {
+              "location": "APIAutomationStepDefinition.i_search_and_fetch_the_comments_for_post_and_validate_the_email()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Sanity"
+          },
+          {
+            "line": 3,
+            "name": "@Test_Scenario_1"
+          },
+          {
+            "line": 3,
+            "name": "@Smoke_Test"
+          }
+        ]
+      }
+    ],
+    "name": "API Automation using Restassured",
+    "description": "",
+    "id": "api-automation-using-restassured",
+    "keyword": "Feature",
+    "uri": "ApiAutomation.feature"
+  }
+]
