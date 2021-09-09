@@ -1,19 +1,20 @@
 package api_automation.responses;
 
 import java.util.ArrayList;
-import java.util.List;
+
+import api_automation.model.Post;
+
 
 public class PostResponseDetails {
 	
-	private ArrayList<Integer> postIds;
+	private ArrayList<Post> posts;
 
-	public ArrayList<Integer> getPostIds() {
-		return postIds;
+	public ArrayList<Post> getPosts() {
+		return posts;
 	}
 
-	public void setPostIds(ArrayList<Integer> postIds) {
-		this.postIds = postIds;
+	public void setPosts(ArrayList<Post> posts) {
+		this.posts = posts;
 	}
-	
 	
 }

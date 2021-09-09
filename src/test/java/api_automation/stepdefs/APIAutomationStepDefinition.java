@@ -4,6 +4,7 @@ import static org.testng.Assert.assertFalse;
 
 import java.util.Iterator;
 
+import api_automation.model.Post;
 import api_automation.responses.PostResponseDetails;
 import api_automation.responses.UserResponseDetails;
 import api_automation.test.CommentDetails;
@@ -33,7 +34,6 @@ public class APIAutomationStepDefinition {
 	public void i_hit_api_to_fetch_users() throws Throwable {
 		userDetails.getAllUserDetails(url, "users");
 	}
-
 		
 	@Then("^I search for \"([^\"]*)\"$")
 	public void i_search_for(String username) {
@@ -48,15 +48,25 @@ public class APIAutomationStepDefinition {
 
 	@Then("^I search post for the mentioned user$")
 	public void i_search_post_for_the_mentioned_user(){
-		postResponseDetails.setPostIds(postDetails.getPostDetailsByUserId(url, "posts", userResponseDetails.getUserId()));
+		postResponseDetails.setPosts(postDetails.getPostDetailsByUserId(url, "posts", userResponseDetails.getUserId()));
 	}
 	
 	@Then("^I search and fetch the comments for post and validate the emails$")
 	public void i_search_and_fetch_the_comments_for_post_and_validate_the_email(){
-		Iterator<Integer> it = postResponseDetails.getPostIds().iterator();
+		Iterator<Post> it = postResponseDetails.getPosts().iterator();
 		while(it.hasNext()) {
-			commentDetails.getCommentDetailsByPostId(url, "comments", it.next());
+			commentDetails.getCommentDetailsByPostId(url, "comments", it.next().getId());
 		}
 		
+	}
+	
+	@Then("^I validate mandatory for the post title and body$")
+	public void i_validate_mandatory_for_the_post_title_and_body(){
+		Iterator<Post> it = postResponseDetails.getPosts().iterator();
+		while(it.hasNext()) {
+			//Validating Title & Body
+			postDetails.validateBlankFieldsinPost(it.next().getTitle());
+			postDetails.validateBlankFieldsinPost(it.next().getBody());
+		}
 	}
 }

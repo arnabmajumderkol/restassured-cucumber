@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 import com.cucumber.listener.Reporter;
 
 import api_automation.utils.ConfigFileReader;
-import api_automation.utils.FileReaderManager;
 import cucumber.api.CucumberOptions;
 import cucumber.api.testng.CucumberFeatureWrapper;
 import cucumber.api.testng.TestNGCucumberRunner;
@@ -21,7 +20,7 @@ import cucumber.api.testng.TestNGCucumberRunner;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"api_automation.stepdefs"},
-        tags = {"~@Ignore"},
+        tags = {"@Test_API"},
         format = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber-pretty",
